@@ -1,0 +1,19 @@
+name: download-data
+
+on:
+  workflow_dispatch:
+    inputs:
+      s3_url:
+        description: The URL of the source S3 bucket
+        required: true
+        default: 'https://dsti-aws-class-website-ravand.s3.eu-west-1.amazonaws.com/kagglecatsanddogs_5340.zip'
+          
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Download data from S3
+      run: |
+        wget ${{github.event.inputs.S3_url}}
