@@ -3,6 +3,8 @@ Keras_AWSclass
 
 AWS
 
+[![download-data](https://github.com/Abzurde/image_classifier/actions/workflows/main.yml/badge.svg?event=workflow_dispatch)](https://github.com/Abzurde/image_classifier/actions/workflows/main.yml)
+
 Project Organization
 ------------
 
